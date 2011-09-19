@@ -1,0 +1,3 @@
+[submodule "vim"]
+	path = vim
+	url = https://tuxcanfly@github.com/tuxcanfly/CalVIM.git
