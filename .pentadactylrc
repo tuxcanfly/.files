@@ -1,0 +1,12 @@
+"1.0b6 (created: 2011/03/09 09:25:18)
+
+loadplugins '\.(js|penta)$'
+group user
+map -modes=n j -builtin 5j
+map -modes=n,v J :tabprevious<Return>
+map -modes=n,v K :tabnext<Return>
+map -modes=n k -builtin 5k
+set guioptions=bCrsT
+set hintkeys=asdfg;lkjh
+
+" vim: set ft=pentadactyl:
