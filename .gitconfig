@@ -1,0 +1,19 @@
+[user]
+	name = "Javed Khan"
+	email = "<javed@agiliq.com>"
+[core]
+	excludesfile = ~/.gitignore
+[color]
+	ui = auto
+[push]
+	default = tracking
+[alias]
+    b = branch
+    co = checkout
+    ci = commit
+    st = status -sb
+    d = diff --word-diff
+    l = log --graph --pretty=oneline --abbrev-commit --decorate --since=1.days
+    p = push
+    up = pull
+    f = stash save
