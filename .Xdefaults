@@ -27,7 +27,7 @@ URxvt.color14 : #55FFFF
 URxvt.color7  : #AAAAAA
 URxvt.color15 : #FFFFFF
 
-URxvt*font          : xft:Inconsolata:pixelsize=18
+URxvt*font          : xft:Inconsolata:pixelsize=15
 URxvt*letterSpace   : -1
 URxvt*eightBitInput : true
 
