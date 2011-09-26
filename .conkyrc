@@ -1,6 +1,6 @@
 # Locale, fonts and font sizes.
 use_xft yes
-xftfont Droid Sans:size=9
+xftfont Inconsolata:size=9
 override_utf8_locale yes
 
 # Conky performance
@@ -47,11 +47,11 @@ default_bar_size 100 10
 # Output
 TEXT
 ${image .conky/ubuntu/pix/frame.png -p 0,0 -s 1400x180}
-${voffset 20}${font Droid Sans:style=Bold:size=12}${color0}${goto 256}Disks:${goto 512}Network:${goto 788}Temperatures:${goto 1000}Time and Date:${goto 1180}Battery: ${font}${color}
-${voffset 6}${goto 256}System (/):${goto 380}${fs_used /} / ${fs_size /}${goto 512}Upspeed: ${goto 612}${upspeedgraph eth0 10,100 B7B2AD B7B2AD}${font Droid Sans:style=Bold:size=9}  ${upspeed eth0}${font}${goto 788}CPU: ${goto 868}${hwmon temp 1} ºC${goto 1000}${time %H:%M}  ${time %d/%m/%Y} ${goto 1160}${battery_bar BAT0} ${font Droid Sans:style=Bold:size=9}   $battery_percent%
-${goto 15}Kernel: ${goto 100}${kernel}${goto 380}${fs_bar 10,100 /}${goto 512}Downspeed: ${goto 612}${downspeedgraph eth0 10,100 B7B2AD B7B2AD}${font Droid Sans:style=Bold:size=9}  ${downspeed eth0}${font}${goto 788}Hard Disk: ${goto 868}${execi sudo hddtemp /dev/sda6} ºC${goto 1000}${time %A}, ${time %d} ${time %B} ${time %Y} ${goto 1180}${battery}
-${goto 15}CPU: ${goto 100}${cpubar cpu1 10,100}${font Droid Sans:style=Bold:size=9}  ${cpu cpu1}%${font}${goto 256}Home (/Home):${goto 380}${fs_free /home} / ${fs_size /home}${goto 512}Total Uploaded: ${goto 612}${totalup eth0}
-${goto 15}RAM: ${goto 100}${membar 10,100}${font Droid Sans:style=Bold:size=9}  $memperc%${font}${goto 380}${fs_bar 10,100 /home}${goto 512}Total Download: ${goto 612}${totaldown eth0}
-${goto 15}SWAP:${goto 100}${swapbar 10,100}${font Droid Sans:style=Bold:size=9}  $swapperc%${font}${goto 512}Local IP: ${goto 612}${addr eth0}
+${voffset 20}${font Inconsolata:style=Bold:size=12}${color0}${goto 256}Disks:${goto 512}Network:${goto 788}Temperatures:${goto 1000}Time and Date:${goto 1180}Battery: ${font}${color}
+${voffset 6}${goto 256}System (/):${goto 380}${fs_used /} / ${fs_size /}${goto 512}Upspeed: ${goto 612}${upspeedgraph eth0 10,100 B7B2AD B7B2AD}${font Inconsolata:style=Bold:size=9}  ${upspeed eth0}${font}${goto 788}CPU: ${goto 868}${hwmon temp 1} ºC${goto 1000}${time %H:%M}  ${time %d/%m/%Y} ${goto 1160}${battery_bar BAT0} ${font Inconsolata:style=Bold:size=9}   $battery_percent%
+${goto 15}Kernel: ${goto 100}${kernel}${goto 380}${fs_bar 10,100 /}${goto 512}Downspeed: ${goto 612}${downspeedgraph eth0 10,100 B7B2AD B7B2AD}${font Inconsolata:style=Bold:size=9}  ${downspeed eth0}${font}${goto 788}Hard Disk: ${goto 868}${execi sudo hddtemp /dev/sda6} ºC${goto 1000}${time %A}, ${time %d} ${time %B} ${time %Y} ${goto 1180}${battery}
+${goto 15}CPU: ${goto 100}${cpubar cpu1 10,100}${font Inconsolata:style=Bold:size=9}  ${cpu cpu1}%${font}${goto 256}Home (/Home):${goto 380}${fs_free /home} / ${fs_size /home}${goto 512}Total Uploaded: ${goto 612}${totalup eth0}
+${goto 15}RAM: ${goto 100}${membar 10,100}${font Inconsolata:style=Bold:size=9}  $memperc%${font}${goto 380}${fs_bar 10,100 /home}${goto 512}Total Download: ${goto 612}${totaldown eth0}
+${goto 15}SWAP:${goto 100}${swapbar 10,100}${font Inconsolata:style=Bold:size=9}  $swapperc%${font}${goto 512}Local IP: ${goto 612}${addr eth0}
 ${goto 15}Uptime: ${goto 100}${uptime}${goto 512}
 
