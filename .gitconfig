@@ -8,12 +8,13 @@
 [push]
 	default = tracking
 [alias]
+    a = add
     b = branch
     co = checkout
     ci = commit
-    st = status -sb
     d = diff --word-diff
+    f = stash save
     l = log --graph --pretty=oneline --abbrev-commit --decorate --since=1.days
     p = push
+    st = status -sb
     up = pull
-    f = stash save

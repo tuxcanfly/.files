@@ -37,3 +37,6 @@ URxvt*scrollTtyKeypress     : True
 URxvt*secondaryScroll       : True
 URxvt*saveLines             : 8000
 URxvt*termName              : rxvt-unicode
+
+URxvt.keysym.Mod4-v         : perl:clipboard:paste
+URxvt.perl-ext-common       : default,matcher,clipboard
