@@ -102,6 +102,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+export BROWSER=google-chrome
+export EDITOR="urxvt -e vim"
+
 export VIRTUALENV_HOME=~/.virtualenvs2.7
 export VIMRUNTIME=/usr/share/vim/vim73
 
@@ -110,7 +113,7 @@ function gitdiff () { git diff -w $@ | vim -; }
 function gen-tags () { find `pwd` -name \*.py -print | xargs ptags.py ; }
 
 
-_complete_virtualenvs() 
+_complete_virtualenvs()
 {
     local cur prev opts
     COMPREPLY=()
