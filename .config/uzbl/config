@@ -267,7 +267,7 @@ set ebind     = @mode_bind global,-insert
 @cbind  <Ctrl>p = hardcopy
 
 # Web searching binds
-@cbind  \\g<Google:>_         = uri http://www.google.com/search?q=\@<encodeURIComponent(%r)>\@
+@cbind  \\g<Google:>_        = uri http://www.google.com/search?q=\@<encodeURIComponent(%r)>\@
 @cbind  ddg<DuckDuckGo:>_    = uri http://duckduckgo.com/?q=%s
 @cbind  \\awiki<Archwiki:>_  = uri http://wiki.archlinux.org/index.php/Special:Search?search=\@<encodeURIComponent(%r)>\@&go=Go
 @cbind  \\wiki<Wikipedia:>_  = uri http://en.wikipedia.org/w/index.php?title=Special:Search&search=\@<encodeURIComponent(%r)>\@&go=Go
@@ -364,14 +364,14 @@ set formfiller = spawn @scripts_dir/formfiller.sh
 # --- Uzbl tabbed binds ------------------------------------------------------
 
 # Tab opening
-@cbind  t              = event NEW_TAB
+@cbind  t               = event NEW_TAB
 @cbind  gN              = event NEW_TAB_NEXT
 @cbind  go<uri:>_       = event NEW_TAB %s
 @cbind  gO<uri:>_       = event NEW_TAB_NEXT %s
 
 # Closing / resting
-@cbind  x              = exit
-@cbind  X              = event CLEAN_TABS
+@cbind  x               = exit
+@cbind  X               = event CLEAN_TABS
 
 # Tab navigating
 @cbind  g<              = event FIRST_TAB

@@ -1603,6 +1603,7 @@ var RESConsole = {
 			'accountSwitcher': true,
 			'styleTweaks': true,
 			'filteReddit': true,
+			'RESTips': false,
 			'RESPro': false
 		};
 		this.setModulePrefs(prefs);
