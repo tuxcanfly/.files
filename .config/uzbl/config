@@ -73,6 +73,9 @@ set download_handler    = sync_spawn @scripts_dir/download.sh
 @on_event   LOAD_COMMIT    script @scripts_dir/formfiller.js
 @on_event   LOAD_COMMIT    script @scripts_dir/follow.js
 
+# Flashblock
+@on_event   LOAD_COMMIT    script @scripts_dir/flashblock.js
+
 # Userscripts/per-site-settings. See the script and the example configuration for details
 @on_event   LOAD_FINISH    spawn @scripts_dir/per-site-settings.py @config_home/uzbl/per-site-settings
 
@@ -438,6 +441,6 @@ sync_spawn_exec @scripts_dir/load_cookies.sh @data_home/uzbl/session-cookies.txt
 
 # Set the "home" page.
 set uri = www.google.com
-set proxy_url = http://127.0.0.1:8118
+#set proxy_url = http://127.0.0.1:8118
 
 # vim: set fdm=syntax:
