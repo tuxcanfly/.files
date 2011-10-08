@@ -1,0 +1,6 @@
+.*
+  .*/\d+-\w+/(thread|subject|author|date).html
+    script @scripts_dir/pipermail.js
+www.reddit.com
+  .*
+    script @scripts_dir/res.js

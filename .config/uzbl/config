@@ -74,7 +74,7 @@ set download_handler    = sync_spawn @scripts_dir/download.sh
 @on_event   LOAD_COMMIT    script @scripts_dir/follow.js
 
 # Userscripts/per-site-settings. See the script and the example configuration for details
-#@on_event   LOAD_COMMIT    spawn @scripts_dir/per-site-settings.py @data_home/uzbl/per-site-settings
+@on_event   LOAD_COMMIT    spawn @scripts_dir/per-site-settings.py @data_home/uzbl/per-site-settings
 
 # Load finish handlers
 @on_event   LOAD_FINISH    @set_status <span foreground="gold">done</span>
@@ -364,7 +364,7 @@ set formfiller = spawn @scripts_dir/formfiller.sh
 # --- Uzbl tabbed binds ------------------------------------------------------
 
 # Tab opening
-@cbind  gn              = event NEW_TAB
+@cbind  t              = event NEW_TAB
 @cbind  gN              = event NEW_TAB_NEXT
 @cbind  go<uri:>_       = event NEW_TAB %s
 @cbind  gO<uri:>_       = event NEW_TAB_NEXT %s
