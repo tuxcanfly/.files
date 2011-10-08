@@ -1591,11 +1591,11 @@ var RESConsole = {
 	resetModulePrefs: function() {
 		prefs = {
 			'userTagger': true,
-			'betteReddit': true,
+			'betteReddit': false,
 			'singleClick': true,
 			'subRedditTagger': true,
 			'uppersAndDowners': true,
-			'keyboardNav': true,
+			'keyboardNav': false,
 			'commentPreview': true,
 			'showImages': true,
 			'showKarma': true,
