@@ -1,3 +1,9 @@
 awesome
 awesome-extra
 rxvt-unicode
+
+xbacklight
+nitrogen
+scrot
+pcmanfm
+xcompmgr
