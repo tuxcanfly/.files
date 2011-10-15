@@ -1,10 +1,11 @@
 awesome
 awesome-extra
-rxvt-unicode
+rxvt-unicode-256color
 
 xbacklight
 nitrogen
 scrot
 pcmanfm
 xcompmgr
+xclip
 liblua5.1-socket2
