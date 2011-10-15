@@ -4,4 +4,3 @@ alias g=git
 alias p=python
 alias deploy='git push && fab deploy; alert'
 alias uzbl=uzbl-tabbed
-alias j=autojump

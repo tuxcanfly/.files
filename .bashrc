@@ -134,3 +134,4 @@ if [ -f ~/Work/Django-1.3/extras/django_bash_completion ]; then
 fi
 
 # Added by autojump install.sh
+source /etc/profile.d/autojump.bash
