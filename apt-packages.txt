@@ -7,3 +7,4 @@ nitrogen
 scrot
 pcmanfm
 xcompmgr
+liblua5.1-socket2
