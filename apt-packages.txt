@@ -9,3 +9,4 @@ pcmanfm
 xcompmgr
 xclip
 liblua5.1-socket2
+conky
