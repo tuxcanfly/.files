@@ -1,6 +1,6 @@
 [submodule ".vim"]
-	path = .vim
+	path = home/.vim
 	url = git://github.com/tuxcanfly/CalVIM.git
 [submodule ".config/awesome"]
-	path = .config/awesome
+	path = home/.config/awesome
 	url = git://github.com/tuxcanfly/awful.git
